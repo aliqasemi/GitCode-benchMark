@@ -20,3 +20,9 @@ Route::get('/users/addUser', function () {
     return view('User.add_user');
 });
 
+
+Route::get('/projects/addProject', 'ProjectsController@form_project');
+
+
+Route::post('/projects/addProject/add', 'ProjectsController@add_project');
+

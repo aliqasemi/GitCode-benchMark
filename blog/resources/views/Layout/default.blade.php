@@ -11,15 +11,17 @@
     <div class="row">
         <h1 class="col-9 bg-info" style="border-radius: 20px ; padding: 5px ; margin : 0 auto ; text-align: center">&nbsp;&nbsp;Dr. Biglari : Inplemention Of Database System</h1>
         <br>
-        <h2 class="col-6 bg-info" style="border-radius: 20px ; padding: 5px ; margin : 0 auto ; text-align: center">&nbsp;&nbsp;Vahid Baghni Ali Qasemi </h2>
+        <h2 class="col-6 bg-info" style="border-radius: 20px ; padding: 5px ; margin : 0 auto ; text-align: center">&nbsp;&nbsp;Vahid Baghani Ali Qasemi </h2>
     </div>
     <div class="row  text-center">
         <div class="col-9" style="margin: 0 auto ; padding: 50px ; border-radius: 20px ; cursor: pointer">
+
             <form  class="bg-info" style="padding: 40px ; border-radius: 20px ; margin: 0 auto" method="post" action="@yield('action')">
+                @yield('{{csrf_field()}}')
                 <div class="form-group">
                     <div class="row">
                         <div class="col-9 bg-warning" style="border-radius: 5px ; margin: 0 auto">
-                            @yield('data-input-output-lable')
+                            @yield('data-input-output-label')
                         </div>
                     </div>
                     <div class="row">
