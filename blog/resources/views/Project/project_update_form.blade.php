@@ -11,7 +11,7 @@
     {{method_field('PATCH')}}
 @endsection
 @section('data-input-output-label')
-    <label for="first_name_input">Add Project</label>
+    <label for="first_name_input">Edit Project</label>
 @endsection
 
 @section('data-input-output')

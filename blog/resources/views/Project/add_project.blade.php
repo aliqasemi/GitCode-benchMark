@@ -8,7 +8,6 @@
 @endsection
 @section('{{csrf_field()}}')
     {{csrf_field()}}
-
 @endsection
 @section('data-input-output-label')
     <label for="first_name_input">Add Project</label>

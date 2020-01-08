@@ -16,10 +16,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/users/addUser', function () {
-    return view('User.add_user');
-});
-
+//Project Schema:
 
 Route::get('/projects/addProject', 'ProjectsController@form_project');
 
@@ -34,3 +31,23 @@ Route::get('/projects/project_delete/{projects}' , 'ProjectsController@project_d
 Route::get('/projects/project_update_form/{projects}' , 'ProjectsController@project_update_form') ;
 
 Route::patch('/projects/project_update/{projects}' , 'ProjectsController@project_update') ;
+
+//End Project Schema
+
+//User Schema:
+
+Route::get('/users/addUser', 'UsersCodeController@form_user');
+
+Route::post('/users/addUser/add', 'UsersCodeController@add_user');
+
+Route::get('/users/user_list' , 'UsersCodeController@user_list') ;
+
+Route::get('/users/user_detail/{users}' , 'UsersCodeController@user_detail') ;
+
+Route::get('/users/user_delete/{users}' , 'UsersCodeController@user_delete') ;
+
+Route::get('/users/user_update_form/{users}' , 'UsersCodeController@user_update_form') ;
+
+Route::patch('/users/user_update/{users}' , 'UsersCodeController@user_update') ;
+
+//End User Schema

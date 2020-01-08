@@ -5,7 +5,7 @@
 @endsection
 
 @section('data-input-output-label')
-    <label for="first_name_input">Project List</label>
+    <label for="first_name_input">Project detail</label>
 @endsection
 
 @section('data-input-output')

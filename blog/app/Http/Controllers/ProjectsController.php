@@ -19,7 +19,7 @@ class ProjectsController extends Controller
             'name' => $request['name'] ,
             'create_date' => $request['create_date'] ,
         ]);
-        return redirect('/projects/addProject') ;
+        return redirect('/projects/project_list') ;
         }
 
 
@@ -45,8 +45,5 @@ class ProjectsController extends Controller
         $projects->update($request->all()) ;
         return redirect('/projects/project_list') ;
     }
-
-
-
 
 }

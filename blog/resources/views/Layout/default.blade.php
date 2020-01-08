@@ -24,6 +24,7 @@
                             @yield('data-input-output-label')
                         </div>
                     </div>
+                    <br>
                     <div class="row">
                         <div class="col-9 bg-warning" style="border-radius: 5px ; margin: 0 auto ; padding: 20px">
                             <div class="col-12">

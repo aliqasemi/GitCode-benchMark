@@ -1,17 +1,19 @@
 @extends('Layout.default')
 
 @section('titile')
-    add project
+    edit user
 @endsection
 @section('action')
-    /users/addUser/add
+    /users/user_update/{{$users->id}}
 @endsection
 @section('{{csrf_field()}}')
     {{csrf_field()}}
+    {{method_field('PATCH')}}
 @endsection
 @section('data-input-output-label')
-    <label for="first_name_input">Add User</label>
+    <label for="first_name_input">Edit Project</label>
 @endsection
+
 @section('data-input-output')
     <label for="typeUser">Select Type</label>
     <select class="form-control" id="typeUser" name="type">
@@ -27,7 +29,8 @@
         @endforeach
     </select>
     <br>
-    <input style="border-radius: 20px" class="btn-block" type="submit" value="Insert">
+    <input style="border-radius: 20px" class="btn-block" type="submit" value="Edit">
     <br>
     <a style="border-radius: 20px" href="" class="btn-block bg-dark" type="submit">User list</a>
 @endsection
+
