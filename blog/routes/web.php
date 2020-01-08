@@ -29,3 +29,8 @@ Route::get('/projects/project_list' , 'ProjectsController@project_list') ;
 
 Route::get('/projects/project_detail/{projects}' , 'ProjectsController@project_detail') ;
 
+Route::get('/projects/project_delete/{projects}' , 'ProjectsController@project_delete') ;
+
+Route::get('/projects/project_update_form/{projects}' , 'ProjectsController@project_update_form') ;
+
+Route::patch('/projects/project_update/{projects}' , 'ProjectsController@project_update') ;
