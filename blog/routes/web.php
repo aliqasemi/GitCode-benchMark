@@ -23,6 +23,9 @@ Route::get('/users/addUser', function () {
 
 Route::get('/projects/addProject', 'ProjectsController@form_project');
 
-
 Route::post('/projects/addProject/add', 'ProjectsController@add_project');
+
+Route::get('/projects/project_list' , 'ProjectsController@project_list') ;
+
+Route::get('/projects/project_detail/{projects}' , 'ProjectsController@project_detail') ;
 

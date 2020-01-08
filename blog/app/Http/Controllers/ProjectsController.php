@@ -19,5 +19,16 @@ class ProjectsController extends Controller
             'name' => $request['name'] ,
             'create_date' => $request['create_date'] ,
         ]);
+        return redirect('/projects/addProject') ;
         }
+
+
+    public function project_list(){
+        $data = Projects::get() ;
+        return view('Project.project_list' , compact('data')) ;
+    }
+
+    public function project_detail(Projects $projects){
+        return view('Project.project_detail' , compact('projects')) ;
+    }
 }

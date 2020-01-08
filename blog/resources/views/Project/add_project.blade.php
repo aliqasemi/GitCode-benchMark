@@ -1,5 +1,8 @@
 @extends('Layout.default')
 
+@section('titile')
+    add project
+@endsection
 @section('action')
     /projects/addProject/add
 @endsection
@@ -17,4 +20,6 @@
     <input type="date" class="form-control" name="create_date"  >
     <br>
     <input style="border-radius: 20px" class="btn-block" type="submit" value="Insert">
+    <br>
+    <a style="border-radius: 20px" href="/projects/project_list" class="btn-block bg-dark" type="submit">Project list</a>
 @endsection

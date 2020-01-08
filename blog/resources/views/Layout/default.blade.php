@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>1</title>
+    <title>@yield('title')</title>
     <link rel="stylesheet" href="{{URL::asset('CJ/css/bootstrap.css')}}" type="text/css">
     <link rel="stylesheet" href="{{URL::asset('CJ/css/style.css')}}" type="text/css">
 </head>
