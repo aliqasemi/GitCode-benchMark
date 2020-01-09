@@ -51,3 +51,19 @@ Route::get('/users/user_update_form/{users}' , 'UsersCodeController@user_update_
 Route::patch('/users/user_update/{users}' , 'UsersCodeController@user_update') ;
 
 //End User Schema
+
+//Branches Schema
+
+Route::get('/branches/addBranch', 'BranchesController@form_branch');
+
+Route::post('/branches/addBranch/add', 'BranchesController@add_branch');
+
+Route::get('/branches/branch_list' , 'BranchesController@branch_list') ;
+
+Route::get('/branches/branch_detail/{branches}' , 'BranchesController@branch_detail') ;
+
+Route::get('/branches/branch_delete/{branches}' , 'BranchesController@branch_delete') ;
+
+Route::get('/branches/branch_update_form/{branches}' , 'BranchesController@branch_update_form') ;
+
+Route::patch('/branches/branch_update/{branches}' , 'BranchesController@branch_update') ;
