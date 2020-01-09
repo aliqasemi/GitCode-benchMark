@@ -67,3 +67,23 @@ Route::get('/branches/branch_delete/{branches}' , 'BranchesController@branch_del
 Route::get('/branches/branch_update_form/{branches}' , 'BranchesController@branch_update_form') ;
 
 Route::patch('/branches/branch_update/{branches}' , 'BranchesController@branch_update') ;
+
+//End Branch Schema
+
+//Pushes Schema
+
+Route::get('/pushes/addPush', 'PushesController@form_push');
+
+Route::post('/pushes/addPush/add', 'PushesController@add_push');
+
+Route::get('/pushes/push_list' , 'PushesController@push_list') ;
+
+Route::get('/pushes/push_detail/{pushes}' , 'PushesController@push_detail') ;
+
+Route::get('/pushes/push_delete/{pushes}' , 'PushesController@push_delete') ;
+
+Route::get('/pushes/push_update_form/{pushes}' , 'PushesController@push_update_form') ;
+
+Route::patch('/pushes/push_update/{pushes}' , 'PushesController@push_update') ;
+
+//End Pushes Schema

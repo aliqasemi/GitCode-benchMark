@@ -13,7 +13,7 @@
     <label for="first_name_input">Add Branch</label>
 @endsection
 @section('data-input-output')
-    <label for="name">Select Type</label>
+    <label for="name">Branch name</label>
     <input type="text" class="form-control" name = "name"  id="name" style="text-align: left">
     <br>
     <label for="typeUser">Select Type</label>

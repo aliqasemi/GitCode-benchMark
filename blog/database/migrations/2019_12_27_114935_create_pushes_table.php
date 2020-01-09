@@ -15,6 +15,7 @@ class CreatePushesTable extends Migration
     {
         Schema::create('pushes', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->timestamps();
             $table->text('file');
             $table->text('comment');
             $table->dateTime('date_and_time');
