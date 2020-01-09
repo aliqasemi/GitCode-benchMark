@@ -87,3 +87,21 @@ Route::get('/pushes/push_update_form/{pushes}' , 'PushesController@push_update_f
 Route::patch('/pushes/push_update/{pushes}' , 'PushesController@push_update') ;
 
 //End Pushes Schema
+
+//Issues Schema
+
+Route::get('/issues/addIssue', 'IssuesController@form_issue');
+
+Route::post('/issues/addIssue/add', 'IssuesController@add_issue');
+
+Route::get('/issues/issue_list' , 'IssuesController@issue_list') ;
+
+Route::get('/issues/issue_detail/{issues}' , 'IssuesController@issue_detail') ;
+
+Route::get('/issues/issue_delete/{issues}' , 'IssuesController@issue_delete') ;
+
+Route::get('/issues/issue_update_form/{issues}' , 'IssuesController@issue_update_form') ;
+
+Route::patch('/issues/issue_update/{issues}' , 'IssuesController@issue_update') ;
+
+//End Issues Schema
