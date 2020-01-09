@@ -35,23 +35,23 @@ class IssuesController extends Controller
         return view('Issue.issue_list' , compact('data')) ;
     }
 
-    public function issue_detail(Pushes $pushes){
-        return view('Push.push_detail' , compact('pushes')) ;
+    public function issue_detail(Issues $issues){
+        return view('Issue.issue_detail' , compact('issues')) ;
     }
 
-    public function issue_delete(Pushes $pushes){
-        $pushes->delete() ;
-        return redirect('/pushes/push_list') ;
+    public function issue_delete(Issues $issues){
+        $issues->delete() ;
+        return redirect('/issues/issue_list') ;
     }
 
-    public function issue_update_form(Pushes $pushes){
+    public function issue_update_form(Issues $issues){
         $user = UsersCode::get() ;
-        $branch = Branches::get() ;
-        return view('Push.push_update_form' , compact('pushes' , 'branch' , 'user')) ;
+        $push = Pushes::get() ;
+        return view('Issue.issue_update_form' , compact('push' , 'issues' , 'user')) ;
     }
 
-    public function issue_update(Pushes $pushes , Request $request){
-        $pushes->update($request->all()) ;
-        return redirect('/pushes/push_list') ;
+    public function issue_update(Issues $issues , Request $request){
+        $issues->update($request->all()) ;
+        return redirect('/issues/issue_list') ;
     }
 }

@@ -10,7 +10,7 @@
     {{csrf_field()}}
 @endsection
 @section('data-input-output-label')
-    <label for="first_name_input">Add Issue</label>
+    <label for="first_name_input">Edit Issue</label>
 @endsection
 
 @section('data-input-output')
