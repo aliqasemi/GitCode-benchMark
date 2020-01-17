@@ -22,6 +22,8 @@ class ProjectsController extends Controller
         return redirect('/projects/project_list') ;
         }
 
+        //
+
 
     public function project_list(){
         $data = Projects::get() ;

@@ -45,7 +45,7 @@ class IssuesController extends Controller
     }
 
     public function issue_update_form(Issues $issues){
-        $user = UsersCode::get() ;
+        $user = sersCode::get() ;
         $push = Pushes::get() ;
         return view('Issue.issue_update_form' , compact('push' , 'issues' , 'user')) ;
     }
