@@ -16,7 +16,7 @@
     <div class="row  text-center">
         <div class="col-9" style="margin: 0 auto ; padding: 50px ; border-radius: 20px ; cursor: pointer">
 
-            <form  class="bg-info" style="padding: 40px ; border-radius: 20px ; margin: 0 auto" method="post" action="@yield('action')">
+            <form  class="bg-info" style="padding: 40px ; border-radius: 20px ; margin: 0 auto" method="post" action="@yield('action')" enctype="multipart/form-data">
                 @yield('{{csrf_field()}}')
                 <div class="form-group">
                     <div class="row">

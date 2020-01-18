@@ -6,16 +6,23 @@
 @section('action')
     /pushes/addPush/add
 @endsection
+
 @section('{{csrf_field()}}')
     {{csrf_field()}}
 @endsection
+
 @section('data-input-output-label')
     <label for="first_name_input">Push File</label>
 @endsection
 
+@section('enctype')
+
+@endsection
+
 @section('data-input-output')
     <label for="file">File</label>
-    <input type="text" class="form-control" name ="file"  id="file" style="text-align: left">
+    <label for="file">Brows file</label>
+    <input type="file" class="form-control" name ="file"  id="comment" style="text-align: left">
     <br>
     <label for="comment">Comment</label>
     <input type="text" class="form-control" name ="comment"  id="comment" style="text-align: left">

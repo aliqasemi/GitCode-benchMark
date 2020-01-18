@@ -32,5 +32,5 @@
     <br>
     <input style="border-radius: 20px" class="btn-block" type="submit" value="Insert">
     <br>
-    <a style="border-radius: 20px" href="" class="btn-block bg-dark" type="submit">Branch list</a>
+    <a style="border-radius: 20px" href="/branches/branch_list" class="btn-block bg-dark" type="submit">Branch list</a>
 @endsection
